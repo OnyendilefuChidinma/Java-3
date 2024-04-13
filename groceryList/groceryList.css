@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( 115deg, rgba(249, 209, 48, 0.614), rgba(255, 235, 85, 0.402) ), url(https://res.cloudinary.com/du2rjnoya/image/upload/v1712771844/OTS-Java-Project/Woman_online_shopping_with_a_shopping_cart_t3efom.png) ;
+
+    width: 100% !important;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-attachment:local;
+    padding: 40px 0;
+}
+
+.box{
+    width: 80%;
+    min-height: 480px;
+    height: fit-content;
+    background-color: rgba(255, 236, 183, 0.9);
+    border-radius: 24px;
+    margin: 36px auto ;
+    padding: 32px;
+}
+
+.list-title{
+    font-size: 32px;
+    font-weight: bolder;   
+}
+
+.divider{
+    width: 200px;
+    height: 6px;
+    background-color: rgb(193, 156, 8);
+    margin: 0 auto 64px;
+    border-radius: 8px;
+}
+
+input[type=text]{
+    padding: 10px 24px;
+    max-width: 400px;
+    border-radius: 12px 0 0 12px ;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0;
+    display: block;
+}
+
+.submit-btn{
+    background-color: rgb(193, 156, 8);
+    padding: 12px 32px;
+    border-radius: 0 12px 12px 0;
+    width: 160px;
+    text-transform: capitalize;
+}
+
+.grocery-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 520px;
+    height: 64px;
+    margin: 8px auto;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(249, 226, 160, 0.9);
+    border-bottom: 1px solid #d8d8d8;
+}
+
+article:hover{
+    background-color: rgba(252, 242, 215, 0.8);
+}
+
+article .delete-btn:hover{
+    padding: 2px;
+    border: 2px solid red;
+}
+
+article .edit-btn:hover{
+    padding: 2px;
+    border: 2px solid green;
+}
+
+.delete-btn, .edit-btn{
+    border: none;
+}
+
+.clear-btn{
+    background-color: rgb(193, 156, 8);
+    padding: 12px 32px;
+    max-width: 520px;
+    width: 520px;
+    min-width: 320px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 12px;   
+    border: none;
+    text-transform: capitalize;
+}
+
+.alert{
+    margin-bottom: 16px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.alert-danger{
+    color:brown;
+    background-color: #f8d7da;
+}
+
+.alert-success{
+    color:#155724;
+    background-color: #d4edda;
+}
+
+.grocery-container {
+    margin-top: 0;
+    transition: all 0.3s linear;
+    visibility: hidden;
+
+  }
+  .show-container {
+    visibility: visible;
+  }
+
+  .grocery-list{
+    max-height: 400px;
+    margin: 36px 0 48px;
+    overflow-y: auto;
+  }
+    
+  /* To hide scrollbar for chrome */
+  .grocery-list::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* To hide scrollbar for firefox */
+  .grocery-list{
+   scrollbar-width: none;
+  }
+
+  .form-control1{
+    width: fit-content;
+  }
+
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+
+    .box{
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .clear-btn{
+        width: 90%;
+    }
+
+    .list-title{
+        font-size: 24px;
+        
+    }
+
+    input[type=text]{
+        padding: 12px 24px;
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+    .submit-btn{
+        border-radius: 12px;
+        width: 100%;
+        display: inline-block;
+        
+    }
+
+    .form-control1{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        width: 90%;
+        margin: auto;
+
+        flex-wrap: wrap;
+        
+      }
+
+      .grocery-list{
+        width: 90%;
+        margin: 36px auto 48px;
+      }
+    
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+
+    .box{
+        width: 90%;
+        padding: 16px;
+    }
+    
+    .clear-btn{
+        width: 90%;
+        width: 440px;
+    }
+
+    .form-control1{
+        display: flex;
+        justify-content: center;
+        width: 440px;
+        margin: auto;
+        
+      }
+
+  }
